@@ -1,9 +1,10 @@
-import java.util.Scanner;
-
 /*
  * Programar un algoritmo recursivo que permita sumar los dígitos
  * de un número.Ejemplo: Entrada:123 Resultado:6
  * */
+
+import java.util.Scanner;
+
 public class task_02 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -14,7 +15,7 @@ public class task_02 {
         System.out.println("La suma de tots els digits es de: " + suma(nombre));
     }
 
-    private static int suma (int a) {
+    private static int suma(int a) {
         if (a == 0) {
             return 0;
         } else {
