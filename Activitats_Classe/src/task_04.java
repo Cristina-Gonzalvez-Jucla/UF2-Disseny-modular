@@ -1,7 +1,7 @@
 import java.text.DecimalFormat;
 import java.util.Scanner;
 
-public class task_4 {
+public class task_04 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.println("Indica el nombre d'articles que vol comprar");

@@ -1,4 +1,4 @@
-public class task_2 {
+public class task_02 {
     public void main(String[] args) {
         showBeeps(10);
     }

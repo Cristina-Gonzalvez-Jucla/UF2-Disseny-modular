@@ -1,4 +1,4 @@
-public class task_9 {
+public class task_09 {
     public static void main(String[] args) {
         int[][] vector = new int[10][5];
 
