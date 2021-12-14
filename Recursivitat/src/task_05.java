@@ -16,7 +16,7 @@ public class task_05 {
 
         for (int i = 0; i < vector.length; i++) {
             for (int j = 0; j < vector[i].length; j++) {
-                System.out.println("indica el valor de la posicio " + i + ", "+ j);
+                System.out.println("indica el valor de la posicio " + i + ", " + j);
                 vector[i][j] = scanner.nextInt();
                 System.out.println("El valr de la posicio " + i + ", " + j + " es igual a: " + vector[i][j]);
             }
@@ -29,7 +29,10 @@ public class task_05 {
         if (fila == 0 && columna == 0) {
             return array[fila][columna];
         } else {
-            return array[fila - 1][columna - 1] += sumaElementosMatriz(array, fila - 1 , columna - 1);
+            if (columna != 0) {
+
+            }
+            return array[fila - 1][columna - 1] += sumaElementosMatriz(array, fila - 1, columna - 1);
         }
     }
 }
