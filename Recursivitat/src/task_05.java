@@ -6,32 +6,30 @@ import java.util.Scanner;
  */
 public class task_05 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        //create a matrix where the user will introduce the numbers of the matrix
-        System.out.println("Introdueix el nombre de files de la matriu");
-        int n = sc.nextInt();
-        System.out.println("Introdueix el nombre de columnes de la matriu");
-        int m = sc.nextInt();
-        int[][] matriu = new int[n][m];
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Indica el nombre de files que vols que tingui la matriu: ");
+        int numeroFiles = scanner.nextInt();
+        System.out.println("Indica el nombre de columnes que vols que tingui la matriu: ");
+        int numeroColumnes = scanner.nextInt();
+        int[][] vector = new int[numeroFiles][numeroColumnes];
 
 
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < m; j++) {
-                System.out.println("Introdueix el numero de la posicio " + i + " " + j);
-                matriu[i][j] = sc.nextInt();
+        for (int i = 0; i < vector.length; i++) {
+            for (int j = 0; j < vector[i].length; j++) {
+                System.out.println("indica el valor de la posicio " + i + ", "+ j);
+                vector[i][j] = scanner.nextInt();
+                System.out.println("El valr de la posicio " + i + ", " + j + " es igual a: " + vector[i][j]);
             }
         }
-        System.out.println(suma(matriu, n , m));
-
+        System.out.println("El valor de la suma dels valors es de: " + sumaElementosMatriz
+                (vector, numeroFiles - 1, numeroColumnes - 1));
     }
 
-    public static int suma(int[][] matriu, int n, int m) {
-        if (n == 0 && m == 0) {
-            return matriu[n][m];
+    public static int sumaElementosMatriz(int[][] array, int fila, int columna) {
+        if (fila == 0 && columna == 0) {
+            return array[fila][columna];
         } else {
-            return matriu[n][m] + suma(matriu, n - 1, m - 1);
+            return array[fila - 1][columna - 1] += sumaElementosMatriz(array, fila - 1 , columna - 1);
         }
     }
-
 }
-

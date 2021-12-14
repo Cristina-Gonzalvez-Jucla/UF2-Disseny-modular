@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Activitats_Classe/Activitats_Classe.iml" filepath="$PROJECT_DIR$/Activitats_Classe/Activitats_Classe.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Manel_Ejercicios/Manel_Ejercicios.iml" filepath="$PROJECT_DIR$/Manel_Ejercicios/Manel_Ejercicios.iml" />
       <module fileurl="file://$PROJECT_DIR$/Recursivitat/Recursivitat.iml" filepath="$PROJECT_DIR$/Recursivitat/Recursivitat.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/UF2_Disseny_modular.iml" filepath="$PROJECT_DIR$/.idea/UF2_Disseny_modular.iml" />
     </modules>
