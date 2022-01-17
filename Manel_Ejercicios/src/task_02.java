@@ -16,11 +16,11 @@ public class task_02 {
         }
     }
 
-    public static int mostrar (int c) {
+    public static int mostrar(int c) {
         for (int i = 0; i < 10; i++) {
             System.out.println("EL valor de la posicio " + c + " es de: ");
 
         }
-return 0;
+        return 0;
     }
 }

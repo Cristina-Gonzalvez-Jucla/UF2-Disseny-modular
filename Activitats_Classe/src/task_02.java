@@ -1,11 +1,13 @@
 public class task_02 {
     public void main(String[] args) {
-        showBeeps(10);
+
+        recursionFunction(true);
     }
 
-    public void showBeeps(int numeroBeeps) {
-        for (int i = 0; i < 2; i++) {
-            System.out.println("Beep #" + i);
+    public void recursionFunction(boolean yes) {
+        while (true) {
+            // core logic
+            System.out.println("Te quiero");
         }
     }
 }
